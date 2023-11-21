@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://thecozycook.com/stovetop-mac-and-cheese/";
+   let authorPhoto = "https://thecozycook.com/wp-content/uploads/2021/11/The-Cozy-Cook.jpg";
+   let authorName = "Stephanie Melchione";
 
    return (
       <div>
@@ -17,7 +17,11 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["uncooked macaroni",
+   "butter",
+   "flour",
+   "heavy cream",
+   "milk"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -49,7 +53,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://thecozycook.com/wp-content/uploads/2021/10/Stovetop-Mac-and-Cheese-2.jpg" alt="" className="imageUpdates"/>
    );
 }
 
